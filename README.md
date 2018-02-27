@@ -1,2 +1,5 @@
 # hidden-mac-settings
-To modify or activate settings that are not available in the Settings app
+This script contains a collection of MacOS Terminal commands
+to modify or activate settings that are not available in the Settings app.
+
+*Use at your own risk*
