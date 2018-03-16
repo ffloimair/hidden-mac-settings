@@ -12,3 +12,7 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES; killall Finde
 # Hide apps to Dock (showing them in a faded look for the icons)
 defaults write com.apple.Dock showhidden -bool TRUE; killall Dock
 
+# Deactivate Mac Dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean TRUE; killall Dock
+
+
