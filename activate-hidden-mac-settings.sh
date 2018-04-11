@@ -16,7 +16,7 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES; killall Finde
 defaults write com.apple.Dock showhidden -bool TRUE; killall Dock
 
 # Deactivate Mac Dashboard
-defaults write com.apple.dashboard mcx-disabled -boolean TRUE; killall Dock
+defaults write com.apple.dashboard mcx-disabled -boolean true; killall Dock
 
 # Reset Dock to Defaults
 # defaults delete com.apple.dock; killall Dock
@@ -24,3 +24,5 @@ defaults write com.apple.dashboard mcx-disabled -boolean TRUE; killall Dock
 # Disable iCloud Drive as default save target
 # defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
 
+# Do not write .DS_xxx files to network drives
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
