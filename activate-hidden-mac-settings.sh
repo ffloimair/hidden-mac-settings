@@ -6,8 +6,11 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 # Show full path in Finder's window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES; killall Finder
 
-# Add spacers to Dock (execute once per spacer) -> can be deleted by dragging it out of the Dock again
+# Add spacers to Dock in apps area (execute once per spacer) -> can be deleted by dragging it out of the Dock again
 # defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'; killall Dock
+
+# Add spacers to Dock in document area (execute once per spacer) -> can be deleted by dragging it out of the Dock again
+# defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'; killall Dock
 
 # Hide apps to Dock (showing them in a faded look for the icons)
 defaults write com.apple.Dock showhidden -bool TRUE; killall Dock
@@ -15,4 +18,9 @@ defaults write com.apple.Dock showhidden -bool TRUE; killall Dock
 # Deactivate Mac Dashboard
 defaults write com.apple.dashboard mcx-disabled -boolean TRUE; killall Dock
 
+# Reset Dock to Defaults
+# defaults delete com.apple.dock; killall Dock
+
+# Disable iCloud Drive as default save target
+# defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
 
