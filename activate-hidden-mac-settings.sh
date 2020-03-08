@@ -26,3 +26,9 @@ defaults write com.apple.dashboard mcx-disabled -boolean true; killall Dock
 
 # Do not write .DS_xxx files to network drives
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+#Reenable famous Apple Mac chime on startup on newer Macs
+sudo nvram StartupMute=%00
+
+#Disable Mac chime on startup again
+#sudo nvram StartupMute=%01
