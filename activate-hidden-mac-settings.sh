@@ -32,3 +32,6 @@ sudo nvram StartupMute=%00
 
 #Disable Mac chime on startup again
 #sudo nvram StartupMute=%01
+
+#Disable python2 deprecation warning popup whenever an application accesses /bin/python (e.g. python extension in Visual Studio Code)
+defaults write com.apple.python DisablePythonAlert True
